@@ -10,6 +10,9 @@ namespace chapter1_3
     {
         static void Main(string[] args)
         {
+            Studend stu = new Studend {Name="takio", Grade = 3, ClassNumber = 4 };
+            Console.WriteLine("名前{0}学年{1}クラス{2}",stu.Name,stu.Grade,stu.ClassNumber);
+            Console.ReadKey();
         }
     }
 
