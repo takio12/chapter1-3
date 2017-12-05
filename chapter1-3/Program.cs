@@ -12,7 +12,18 @@ namespace chapter1_3
         {
             Studend stu = new Studend {Name="takio", Grade = 3, ClassNumber = 4 };
             Console.WriteLine("名前{0}学年{1}クラス{2}",stu.Name,stu.Grade,stu.ClassNumber);
-            Console.ReadKey();
+           // Console.ReadKey();
+            Person person = stu;
+            if (person is Studend)
+                Console.WriteLine($"名前{person.Name}");
+            // Console.ReadKey();
+            object obj = stu;
+            if (obj is Studend)
+                Console.WriteLine("obj is Studend");
+
+            obj = stu.Name;
+                Console.WriteLine($"名前{obj}");
+
         }
     }
 
